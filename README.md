@@ -18,6 +18,10 @@ cp .\.env.example .env
 ```markdown
 php .\artisan key:generate
 ```
+🚨🚨مهم: عند الإنتهاء يجب اعداد ملف `.env` ليتناسب مع السيرفر لديك ثم إضافة [قاعدة البيانات](https://github.com/salim-alzuhairi/Fanswan/tree/main/SQLcommand) إليه.
+
+يفضل إستخدام XMAPP Server
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
