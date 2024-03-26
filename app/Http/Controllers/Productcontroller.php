@@ -1,17 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\product;
 use Illuminate\Http\Request;
 
-class Productcontroller extends Controller
+class ProductController extends Controller
 {
-    use App\Models\Product;
+    
 
     public function show($id)
     {
-
         $product = Product::find($id);
-        return view('product.show', compact('product'));
+        return view('Product', compact('product'));
     }
+    
 }

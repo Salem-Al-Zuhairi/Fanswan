@@ -14,16 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/","homeController@index");
-Route::get('home', 'HomeController@index');
+Route::get('home', 'homeController@index');
 
 Route::get('/login',function() 
 {
 return view('login');
 });
+
 Route::get('/signup',function() 
 {
 return view('signup');
 });
+
 Route::get('/register',function() 
 {
 return view('register');
@@ -35,10 +37,9 @@ Route::get('/product',function()
 return view('product');
 });
 
-
-
 Route::get('/s',function() 
 {
 return view('s');
 });
+
 Route::get('product/{id}', 'ProductController@show')->name('product.show');
