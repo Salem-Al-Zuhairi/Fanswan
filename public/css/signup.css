@@ -22,7 +22,7 @@ body {
 
  .box{
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
     padding: 60px;
     
     background-color:#fff;;
@@ -53,6 +53,7 @@ h1{
     background-color: dimgrey;
     border-radius: 20px;
     padding-left: 10px;
+    margin-bottom: 5px;
     
 }
 input::placeholder
@@ -60,9 +61,7 @@ input::placeholder
     color:lightgray;
 }
 .c-submit{
-    position: absolute;
-    bottom: 95px;
-    left: 40%;
+    margin: 50px;
 
 }
 .submit{

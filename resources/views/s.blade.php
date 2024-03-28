@@ -59,7 +59,7 @@
               </div>
               
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="NameYourCity  " required>
+                <input type="address" name="address" class="form-control" id="address" placeholder="Name Your City" required>
               </div>
              
               <div class="my-3">
@@ -67,7 +67,7 @@
                 <div class="error-message"></div>
                 
               </div>
-              <div class="text-center"><button type="submit">Send </button></div>
+              <div class="text-center"><button type="submit">Send</button></div>
             </form>
           </div>
 

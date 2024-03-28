@@ -54,8 +54,8 @@
           <li><a class="getstarted scrollto" href="{{url('home')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto " href="#Products">Products</a></li>
-          <li><a class="nav-link scrollto" href="{{url('login')}}">login</a></li>
-          <li><a class="nav-link scrollto" href="{{url('signup')}}">signup</a></li>
+          <li><a class="nav-link scrollto" href="{{url('login')}}">Login</a></li>
+          <li><a class="nav-link scrollto" href="{{url('signup')}}">SignUp</a></li>
          
        
         </ul>
