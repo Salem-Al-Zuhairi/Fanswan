@@ -90,6 +90,11 @@ h6 {
   padding: 12px 0;
 }
 
+#header .logo {
+  display: flex;
+  align-items: center;
+}
+
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -97,6 +102,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-left: 15px;
 }
 
 #header .logo h1 a,

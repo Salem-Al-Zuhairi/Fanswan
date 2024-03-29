@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => env('APP_NAME', 'Fanswan'),
+    'logo' => env('APP_LOGO', 'public/img/fanswan-logo.png'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment
