@@ -82,9 +82,15 @@
 
      
       <div class="portfolio-description">
-          <h2>About Product</h2>
-          <p>{{ $product->about }}</p>
-          <a class="getstarted scrollto" href="{{ url('s') }}">Buy Now</a>
+ <h2>About Product</h2>
+@php
+    $sentences = explode（"\n"，$product->about）;
+@endphp
+@foreach ($sentences as $sentence)
+<p> {{$sentence}} </p>
+@endforeach
+        
+  <a class="getstarted scrollto" href="{{ url('s') }}">Buy Now</a>
         </div>
       </div>
 
