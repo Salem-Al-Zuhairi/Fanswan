@@ -1,7 +1,7 @@
 <body>
     <center>
     <h1 style="display: inline-block;">
-        اعمل حساب جديد
+       Create a new account
     </h1>
     </center>
 </body>
