@@ -775,70 +775,71 @@ section {
 /**********************************/
 /********** Products CSS **********/
 /**********************************/
-#products {
-  position: relative;
-  padding: 20px 0;
+#products .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#products .col-md-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 #products .product-single {
   position: relative;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   background: #f7f7f7;
   border-radius: 5px;
 }
 
-#products .product-single .product-img {
-  position: relative;
+#products .product-img {
   width: 100%;
+  height: 150px;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 #products .product-img img {
-  max-width: 100%;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #products .product-content {
-  position: relative;
-  width: 100%;
+  margin-top: 10px;
 }
 
 #products .product-content h2 {
   color: #4F84C4;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 #products .product-content h3 {
   color: #4F84C4;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 #products .product-content .btn {
   color: #4F84C4;
-  font-size: 18px;
+  font-size: 16px;
   border: 2px solid #4F84C4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 #products .product-content .btn:hover {
   color: #ffffff;
   background: #4F84C4;
 }
-
-@media (max-width: 767.98px) {
-  #products .product-single {
-      margin-bottom: 45px;
-  }
-  
-  #products .col-md-3:last-child .product-single {
-      margin-bottom: 0;
-  }
-}
-
-
 
 /*--------------------------------------------------------------
 # Portfolio Details
