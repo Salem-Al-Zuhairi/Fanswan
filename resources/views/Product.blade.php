@@ -84,12 +84,16 @@
       <div class="portfolio-description">
  <h2>About Product</h2>
       @php
-       $sentences = explode("\n",$product->about);
-    @endphp
-    @foreach ($sentences as $sentence)
-       <p> {{$sentence}} </p>
-     @endforeach
-        
+    $sentences = explode("•", $product->about);
+@endphp
+
+@foreach ($sentences as $index => $sentence)
+    @if ($index === 0)
+        <p>{{ $sentence }}</p>
+    @else
+        <p>- {{ $sentence }}</p>
+    @endif
+@endforeach
   <a class="getstarted scrollto" href="{{ url('s') }}">Buy Now</a>
         </div>
       </div>
