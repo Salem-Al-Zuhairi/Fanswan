@@ -84,7 +84,8 @@
                 <div class="product-content">
                   <h2>{{ $product['NAME'] }}</h2>
                   <h3>{{ $product['price'] }}</h3>
-                  <a class="btn" href="{{ route('product.show', ['id' => $product['id']]) }}">Read More</a>
+                  <a class="btn" href="{{ route('product.show', ['id
+                      ' => $product['id']]) }}">Read More</a>
                 </div>
               </div>
             </div>
@@ -98,36 +99,7 @@
  
   
 
-  </main><!-- End #main   <section id="Products" class="portfolio">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Products</h2>
-    </div>
-
-    <div id="products">
-      <div class="container">
-        <div class="section-header"></div>
-        <div class="row align-items-center">
-          @foreach ($products as $product)
-            <div class="col-md-3">
-              <div class="product-single">
-                <div class="product-img">
-                  <img src="{{ $product['images'] }}" alt="Product Image">
-                </div>
-                <div class="product-content">
-                  <h2>{{ $product['NAME'] }}</h2>
-                  <h3>{{ $product['price'] }}</h3>
-                  <a class="btn" href="{{ route('product.show', ['id
-                      ' => $product['id']]) }}">Read More</a>
-                </div>
-              </div>
-            </div>
-          @endforeach
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
+  </main><!-- End #main -->
 
  
 
