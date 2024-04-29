@@ -74,29 +74,20 @@
       <div class="container">
         <div class="section-header"></div>
         <div class="row align-items-center">
-          <?php
-        
-          foreach ($products as $product) {
-            $image = $product['images'];
-            $name = $product['NAME'];
-            $price = $product['price'];
-            $id = $product['id'];
-          ?>
+          @foreach ($products as $product)
             <div class="col-md-3">
               <div class="product-single">
                 <div class="product-img">
-                  <img src="<?php echo $image; ?>" alt="Product Image">
+                  <img src="{{ $product['images'] }}" alt="Product Image">
                 </div>
                 <div class="product-content">
-                  <h2><?php echo $name; ?></h2>
-                  <h3><?php echo $price; ?></h3>
-                  <a class="btn" href="{{ route('product.show', ['id' => $product->id]) }}">Read More</a>
+                  <h2>{{ $product['NAME'] }}</h2>
+                  <h3>{{ $product['price'] }}</h3>
+                  <a class="btn" href="{{ route('product.show', ['ia' => $product['id']]) }}">Read More</a>
                 </div>
               </div>
             </div>
-          <?php
-          }
-          ?>
+          @endforeach
         </div>
       </div>
     </div>
