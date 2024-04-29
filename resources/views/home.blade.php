@@ -35,7 +35,7 @@
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
           <p>
-            Here at Fanswan we’ve spent over 30 years focusing on just three things
+            {{$s}}Here at Fanswan we’ve spent over 30 years focusing on just three things
            – technology, people, and how we bring them together. Whatever your passion, be it PC gaming, professional graphics, video editing, music production, high performance compute or artificial intelligence – we have a team of specialists ready and waiting to help you find exactly what you need, even if it’s just some good friendly advice. Our family of over 400 teammates live and breathe our 3XS philosophy of providing customers with the best Specification, Service and Satisfaction, which is reflected by the hundreds of media and industry awards Scan has won, and by more than 25,000 positive reviews on Trustpilot.
           </p>
           
