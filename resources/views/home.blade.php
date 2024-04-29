@@ -83,7 +83,8 @@
                 <div class="product-content">
                   <h2>{{ $product['NAME'] }}</h2>
                   <h3>{{ $product['price'] }}</h3>
-                  <a class="btn" href="{{ route('product.show', ['ia' => $product['id']]) }}">Read More</a>
+                  <a class="btn" href="{{ route('product.show', ['id
+                      ' => $product['id']]) }}">Read More</a>
                 </div>
               </div>
             </div>
