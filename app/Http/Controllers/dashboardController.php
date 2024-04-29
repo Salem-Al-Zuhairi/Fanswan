@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class dashBoardController extends Controller
+class dashboardController extends Controller
 {
     function index() {
         $j = true;
