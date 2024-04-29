@@ -39,12 +39,13 @@
            – technology, people, and how we bring them together. Whatever your passion, be it PC gaming, professional graphics, video editing, music production, high performance compute or artificial intelligence – we have a team of specialists ready and waiting to help you find exactly what you need, even if it’s just some good friendly advice. Our family of over 400 teammates live and breathe our 3XS philosophy of providing customers with the best Specification, Service and Satisfaction, which is reflected by the hundreds of media and industry awards Scan has won, and by more than 25,000 positive reviews on Trustpilot.
           </p>
           
+          
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
           <ul>
             <li><i class="ri-check-double-line"></i>
             Whether you’re a customer, 
-            staff member or vendor, we welcome you to the Fanswan family. 
+            staff member or vendor, we welcome you to the Fanswan family.
             We’re a tight, all inclusive bunch that always looks after its own.
           </ul>
             <ul>

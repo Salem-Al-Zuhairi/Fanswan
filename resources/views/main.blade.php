@@ -46,15 +46,24 @@
       <a href="{{url('home')}}"><img src="{{asset('img/fanswan-logo.png')}}" alt="fanswan logo" class="img-fluid"></a>
         <h1><a href="{{url('home')}}">Fanswan</a></h1>
       </div>
+      @auth
+     <strong style='color:#3498db; font-family:"Raleway", sans-serif'>welcome <b>{{Auth::user()->name}}</b> </strong>
 
+      @endauth
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="getstarted scrollto" href="{{url('home')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto " href="#Products">Products</a></li>
+          @auth
+          <li><a class="nav-link scrollto" href="{{url('logout')}}">Logout</a></li>
+          @if($j) 
+          <li><a class="nav-link scrollto" href="{{url('dashboard')}}">Dashboard</a></li>
+          @endif
+          @else
           <li><a class="nav-link scrollto" href="{{url('login')}}">Login</a></li>
           <li><a class="nav-link scrollto" href="{{url('signup')}}">SignUp</a></li>
-         
+          @endauth
        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

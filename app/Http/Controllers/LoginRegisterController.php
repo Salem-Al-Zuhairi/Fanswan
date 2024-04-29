@@ -27,7 +27,8 @@ class LoginRegisterController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password)
+            'password' => Hash::make($request->password),
+            'is_admin' => false
         ]);
 
         $credentials = $request->only('email', 'password');
@@ -49,7 +50,7 @@ class LoginRegisterController extends Controller
         {
             $request->session()->regenerate();
             return redirect()->route('home')
-                ->withSuccess('You have successfully logged in!');
+                ->withSuccess("You have successfully logged in!");
         }
 
         return back()->withErrors([

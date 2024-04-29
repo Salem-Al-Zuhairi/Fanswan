@@ -14,13 +14,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", "homeController@index")->name('home');
 Route::get('home', 'homeController@index');
-
+Route::get('dashboard', 'dashboardController@index');
+Route::get('addItem', "addItemController@index")->name("addItem");
 Route::get('/login', function () {
-    return view('login');
-});
+    if(Auth::check()){
+        return redirect()->route('home');
+    }
+    else{
+        return view('login');
+    }
+    
+})->name('login');
 
 Route::get('/signup', function () {
+    if(Auth::check()){
+        return redirect()->route('home');
+    }
+    else{
     return view('signup');
+    }
 });
 
 Route::get('/product', function () {
@@ -36,4 +48,7 @@ Route::get('product/{id}', 'ProductController@show')->name('product.show');
 
 Route::post('/store', 'LoginRegisterController@store')->name('store');
 Route::post('/authenticate', 'LoginRegisterController@authenticate')->name('authenticate');
-Route::post('/logout', 'LoginRegisterController@logout')->name('logout');
+Route::get('/logout', 'LoginRegisterController@logout')->name('logout');
+Route::get('modal',function () {
+    return view('modal');
+})->name('modal');
