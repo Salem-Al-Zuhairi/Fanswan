@@ -10,14 +10,13 @@ use Illuminate\Support\Facades\Hash;
 
 class LoginRegisterController extends Controller
 {
-    
-    public function register()
-    {
-        return view('auth.register');
-    }
 
     public function store(Request $request)
     {
+        if(Auth::check()){
+            return redirect()->route('home');
+        }
+
         $request->validate([
             'name' => 'required|string|max:250|unique:users',
             'email' => 'required|email|max:250|unique:users',
@@ -41,6 +40,10 @@ class LoginRegisterController extends Controller
 
     public function authenticate(Request $request)
     {
+        if(Auth::check()){
+            return redirect()->route('home');
+        }
+
         $credentials = $request->validate([
             'email' => 'required|email',
             'password' => 'required'
@@ -61,11 +64,15 @@ class LoginRegisterController extends Controller
 
     public function logout(Request $request)
     {
+        if(Auth::check()){
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect()->route('login')
-            ->withSuccess('You have logged out successfully!');;
+            ->withSuccess('You have logged out successfully!');
+        } else{
+            return redirect()->route('home');
+        }
     }
 
 }

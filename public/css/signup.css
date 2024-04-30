@@ -26,11 +26,10 @@ body {
     padding: 60px;
     
     background-color:#fff;;
-    transform: translate(-60%, 3%);
+    margin-left: 50%;
     text-align: center;
     align-items: center;
     border-radius: 20px;
-    position: relative;
     top:50%;
     left: 55%;
 }

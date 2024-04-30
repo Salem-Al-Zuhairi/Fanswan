@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", "homeController@index")->name('home');
 Route::get('home', 'homeController@index');
-Route::get('dashboard', 'dashboardController@index');
+Route::get('dashboard', 'dashboardController@index')->name('dashboard');
 Route::get('addItem', "addItemController@index")->name("addItem");
+Route::post('addItem', "addItemController@add")->name("addItem");
 Route::get('/login', function () {
     if(Auth::check()){
         return redirect()->route('home');
@@ -49,6 +52,3 @@ Route::get('product/{id}', 'ProductController@show')->name('product.show');
 Route::post('/store', 'LoginRegisterController@store')->name('store');
 Route::post('/authenticate', 'LoginRegisterController@authenticate')->name('authenticate');
 Route::get('/logout', 'LoginRegisterController@logout')->name('logout');
-Route::get('modal',function () {
-    return view('modal');
-})->name('modal');

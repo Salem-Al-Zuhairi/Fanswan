@@ -7,9 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class homeController extends Controller
 {
-    function index()
-
-    {
+    function index() {
         $user = Auth::User();
         $j=false;
         if (isset($user->is_admin)) {
